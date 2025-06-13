@@ -2,6 +2,10 @@
   "name": "qr-web",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
   "homepage": "https://Anomi-LCB.github.io/qr-web",
   "dependencies": {
     "@emotion/react": "^11.14.0",

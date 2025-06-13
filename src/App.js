@@ -3,8 +3,8 @@ import { useDropzone } from "react-dropzone";
 import {
   Container,
   Typography,
-  Button,
   Box,
+  Button,
   CircularProgress,
   Paper,
 } from "@mui/material";
@@ -32,6 +32,7 @@ export default function App() {
     setLoading(true);
     const form = new FormData();
     form.append("file", file);
+
     try {
       const res = await fetch("http://localhost:8000/upload/", {
         method: "POST",
@@ -39,7 +40,8 @@ export default function App() {
       });
       if (!res.ok) throw new Error("업로드 실패");
       const blob = await res.blob();
-      setQrUrl(URL.createObjectURL(blob));
+      const qrImageUrl = URL.createObjectURL(blob);
+      setQrUrl(qrImageUrl);
     } catch (e) {
       alert(e.message);
     } finally {
@@ -83,10 +85,7 @@ export default function App() {
             }}
           >
             <input {...getInputProps()} />
-            <Typography
-              variant="body1"
-              sx={{ color: "#1976d2", fontWeight: "bold" }}
-            >
+            <Typography variant="body1" sx={{ color: "#1976d2", fontWeight: "bold" }}>
               {isDragActive
                 ? "여기에 파일을 놓으세요!"
                 : "이미지를 드래그하거나 아래 버튼으로 선택하세요."}

@@ -2,7 +2,6 @@
   "name": "qr-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Anomi-LCB.github.io/qr-web",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -22,6 +21,7 @@
     "npm-force-resolutions": "^0.0.10"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",

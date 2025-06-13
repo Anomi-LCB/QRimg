@@ -1,43 +1,49 @@
 {
-  "name": "qr-web",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^7.1.1",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-dropzone": "^14.3.8",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+ "이름": "qr-web",
+ "버전": "0.1.0",
+ "비공개": 사실,
+ "homepage": "https://dlckdqja710.github.io/qr-web ",
+ "의존성": {
+ "@emotion/react": "^11.14.0",
+ "@emotion/styled": "^11.14.0",
+ "@mui/material": "^7.1.1",
+ "@testing-library/돔": "^10.4.0",
+ "@testing-library/제스트돔": "^6.6.3",
+ "@testing-library/react": "^16.3.0",
+ "@testing-library/사용자 이벤트": "^13.5.0",
+ "react": "^19.1.0",
+ "react 돔": "^19.1.0",
+ "react 드롭존": "^14.3.8",
+ "react-scripts": "5.0.1",
+ "web-vitals": "^2.1.4"
+ }
+ "개발 종속성": {
+ "gh-pages": "^5.0.0"
+ }
+ "scripts": {
+ "시작": "react-scripts 시작",
+ "빌드": "react-scripts 빌드",
+ "pred 배포": "npm 실행 빌드",
+ "deploy": "gh-페이지 -d 빌드",
+ "테스트": "react-scripts 테스트",
+ "eject": "react-scripts 배출"
+ }
+ "eslintConfig": {
+ "extends": [
+ "react 앱",
+      "react 앱/농담"
     ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+ }
+ "browsers 목록": {
+ "제작": [
+ ">0.2%",
+ 죽지 않았습니다,
+      "op_mini 올이 아님"
+ ],
+ "개발": [
+ "마지막 크롬 버전 1개",
+ "마지막 1 파이어폭스 버전",
+      "마지막 사파리 버전 1편"
     ]
   }
 }

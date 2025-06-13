@@ -27,6 +27,7 @@
     "gh-pages": "^5.0.0"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
